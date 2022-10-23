@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.5em;
+  font-weight: 600;
+  background-color: #f8f7f3;
+}
+h1 {
+  text-align: center;
+  padding: 0 0 40px 0;
+  border-bottom: #333 solid 1px;
+}
+section {
+  width: 1000px;
+  min-height: 500px;
+  margin: 100px auto;
+  position: relative;
+}
+
+h2 {
+  text-align: right;
+  margin: 60px 25px 40px 25px;
+  color: #f8f7f3;
+}
+#basis {
+  background-color: #1edad0;
+}
+.tekst_hippe {
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%) skewY(-6deg);
+}
+.tekst_sneakers {
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%) skewY(-6deg);
+}
+.tekst_hippe,
+.tekst_sneakers {
+  font-size: 5em;
+  position: absolute;
+  transform-origin: bottom left;
+  color: transparent;
+  text-shadow: 1px -1px 10px rgba(255, 255, 255, 0.4),
+    0px -1px 10px rgba(255, 255, 255, 0.4),
+    -1px -1px 10px rgba(255, 255, 255, 0.4), 0px -2px 3px #fff,
+    -1px -2px 3px #fff, -2px -2px 3px #fff, -1px -3px 2px #ddd,
+    -2px -3px 2px #ddd, -3px -3px 2px #ddd, -2px -4px 2px #fff,
+    -3px -4px 2px #fff, -4px -4px 2px #fff, -3px -5px 1px #fff,
+    -4px -5px 1px #fff, -5px -5px 1px #fff;
+}
+.tekst_hippe::before {
+  content: "Hippe";
+}
+.tekst_sneakers::before {
+  content: "Sneakers";
+}
+.tekst_hippe::before,
+.tekst_sneakers::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: skewX(30deg);
+  transform-origin: bottom left;
+  z-index: -1;
+  color: transparent;
+  text-shadow: 15px 0px 20px rgba(0, 0, 0, 0.25),
+    15px 0px 15px rgba(0, 0, 0, 0.2), 15px 0px 15px rgba(0, 0, 0, 0.15),
+    15px 0px 15px rgba(0, 0, 0, 0.1);
+}
+#typo {
+  background-color: #333;
+}
+#typo p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) skewY(-6deg);
+  font-size: 4em;
+  color: #fff;
+  text-shadow: 0 0 20px #fefcc9, 10px -10px 30px #feec85,
+    -20px -20px 40px #ffae34, 20px -40px 50px #ec760c, -20px -60px 60px #cd4606,
+    0 -80px 70px #973716, 10px -90px 80px #451b0e;
+}
+
+#blocks a {
+  position: relative;
+  width: 600px;
+  min-height: 100px;
+
+  display: block;
+  margin: 25px 25px 25px 200px;
+  padding: 50px 0 50px 100px;
+
+  text-decoration: none;
+  background-color: #1edad0;
+  border: 3px #333 inset;
+  outline: 3px #333 outset;
+}
+#blocks a::before {
+    content: " ";
+    position: absolute;
+    top: 25px;
+    left: 15px;
+    border: #f8f7f3 solid 35px;
+    border-radius: 50%;
+  }
+  
+#blocks a::after {
+  content: " ";
+  position: absolute;
+  top: 35px;
+  left: 35px;
+  width: 0;
+  height: 0;
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+  border-left: 43.3px solid #333;
+}
